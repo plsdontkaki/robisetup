@@ -59,6 +59,14 @@ li a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+li a:hover {
+    background-color: rgb(141, 141, 141);
+    border-color: white;
+    box-shadow:  0 0 40px rgb(0, 0, 0);
+    transition: 0.5s;
+    border-radius: 25px;
+}
+
 img {
     max-width: 10.417vw;
     max-height: 10.417vw;
