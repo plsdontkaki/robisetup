@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+    max-height: fit-content;
+    border: 5px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    text-align: center;
+    width: 15vw;
+}
+
+p,a,h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    height: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: auto;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 10.417vw;
+    max-height: 10.417vw;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 30vw;
+    }
+    p, a, h2 {
+        font-size: 3vw;
+    }
+    h1 {
+        font-size: 5vw;
+    }
+    img {
+        max-width: 20vw;
+        max-height: 20vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 30vw;
+    }
+    p, a, h2 {
+        font-size: 4vw;
+    }
+    h1 {
+        font-size: 6vw;
+    }
+    img {
+        max-width: 30vw;
+        max-height: 30vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .card {
+        width: 40vw;
+        margin-bottom: 20px;
+    }
+    p, a, h2 {
+        font-size: 5vw;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    img {
+        max-width: 30vw;
+        max-height: 30vw;
+    }
+    li {
+        float: left;
+        width: 100%;
+    }
+}
