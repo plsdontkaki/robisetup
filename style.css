@@ -1,3 +1,5 @@
+@import url(button.js);
+@import url(button.css);
 body {
     background-color: rgb(0, 0, 0);
     text-align: center;
@@ -17,15 +19,21 @@ body {
     width: 15vw;
 }
 
-p,a,h2 {
+a,h2 {
     color: rgb(255, 255, 255);
     font-size: 2vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+    color: white;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -60,11 +68,12 @@ li a{
 }
 
 li a:hover {
-    background-color: rgb(141, 141, 141);
+    background-color: rgb(0, 0, 0);
     border-color: white;
     box-shadow:  0 0 40px rgb(0, 0, 0);
     transition: 0.5s;
     border-radius: 25px;
+    border-style: solid;
 }
 
 img {
@@ -82,7 +91,7 @@ img {
     .card {
         width: 30vw;
     }
-    p, a, h2 {
+    a, h2 {
         font-size: 3vw;
     }
     h1 {
@@ -92,13 +101,17 @@ img {
         max-width: 20vw;
         max-height: 20vw;
     }
+
+    p {
+        font-size: 2vw;
+    }
 }
 
 @media (max-width: 768px) {
     .card {
         width: 30vw;
     }
-    p, a, h2 {
+    a, h2 {
         font-size: 4vw;
     }
     h1 {
@@ -107,6 +120,9 @@ img {
     img {
         max-width: 30vw;
         max-height: 30vw;
+    }
+    p {
+        font-size: 2vw;
     }
 }
 
@@ -119,7 +135,7 @@ img {
         width: 40vw;
         margin-bottom: 20px;
     }
-    p, a, h2 {
+    a, h2 {
         font-size: 5vw;
     }
     h1 {
@@ -132,5 +148,8 @@ img {
     li {
         float: left;
         width: 100%;
+    }
+    p {
+        font-size: 2.5vw;
     }
 }
