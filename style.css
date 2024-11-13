@@ -96,7 +96,8 @@ img {
         font-size: 3vw;
     }
     h1 {
-        font-size: 5vw;
+        font-size: 7vw;
+        line-height: 10vh;
     }
     img {
         max-width: 20vw;
@@ -105,6 +106,12 @@ img {
 
     p {
         font-size: 2vw;
+    }
+    br {
+        margin-top: 20vh;
+    }
+    .spacer {
+        height: 1vh;
     }
 }
 
@@ -116,7 +123,8 @@ img {
         font-size: 4vw;
     }
     h1 {
-        font-size: 6vw;
+        font-size: 8vw;
+        line-height: 10vh;
     }
     img {
         max-width: 30vw;
@@ -124,6 +132,12 @@ img {
     }
     p {
         font-size: 2vw;
+    }
+    br {
+        margin-top: 20vh;
+    }
+    .spacer {
+        height: 1vh;
     }
 }
 
@@ -137,10 +151,11 @@ img {
         margin-bottom: 20px;
     }
     a, h2 {
-        font-size: 5vw;
+        font-size: 7vw;
     }
     h1 {
-        font-size: 8vw;
+        font-size: 10vw;
+        line-height: 10vh;
     }
     img {
         max-width: 30vw;
@@ -153,4 +168,11 @@ img {
     p {
         font-size: 2.5vw;
     }
+    br {
+        margin-top: 20vh;
+    }
+    .spacer {
+        height: 1vh;
+    }
+    
 }
