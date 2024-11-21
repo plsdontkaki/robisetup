@@ -63,9 +63,10 @@ li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 7px 8px;
     text-decoration: none;
     font-family: 'Planet-Kosmos', sans-serif;
+    font-size: 2vw;
 }
 
 li a:hover {
@@ -174,7 +175,10 @@ img {
     .spacer {
         height: 1vh;
     }
+    button {
+        font-size: 2vw;
+    }
     li a {
-        font-size: 3vw;
-    }   
+        font-size: 7vw;
+    }
 }
