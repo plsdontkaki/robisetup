@@ -174,5 +174,7 @@ img {
     .spacer {
         height: 1vh;
     }
-    
+    li a {
+        font-size: 3vw;
+    }   
 }
