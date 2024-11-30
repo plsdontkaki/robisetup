@@ -12,66 +12,76 @@
             <li><a href="https://erikrobi.hu">Erikrobi.hu</a></li>
         </ul>
     </nav>
+
     <h1>Setup</h1>
     <div class="spacer"></div>
-     <div class="button-wrapper">
+
+    <div class="button-wrapper">
         <div class="container">
             <button onclick="expandOverlay('overlay1')">
                 <h2>Gép</h2>
-                <img src="1698159670-h6-flow-hero-black.png" alt="">
+                <img src="1698159670-h6-flow-hero-black.png" alt="Gép">
             </button>
         </div>
         <div class="container">
             <button onclick="expandOverlay('overlay2')">
                 <h2>Perifériák</h2>
-                <img src="periferiak.png" alt="">
+                <img src="periferiak.png" alt="Perifériák">
             </button>
         </div>
-     </div>
+    </div>
 
-     <!-- Overlay for "Gép" -->
-     <div class="overlay" id="overlay1">
+    <!-- Overlay for "Gép" -->
+    <div class="overlay" id="overlay1">
         <div class="overlay-content">
             <button onclick="closeOverlay('overlay1')">Bezárás</button>
             <h2>Gép</h2>
             <div class="component-list">
                 <p>NZXT H6 Flow</p>
                 <p>2x Arctic P14 PWM PST ARGB, 4x Arctic P12 PWM PST ARGB</p>
-                <p>MSI MPG A1000G PCIE5 1000W </p>
+                <p>MSI MPG A1000G PCIE5 1000W</p>
                 <p>MSI MPG Carbon X870E</p>
                 <p>Ryzen 9 9900X 12-Core 4.4GHz</p>
                 <p>Arctic Liquid Freezer III 360 ARGB</p>
                 <p>G.SKILL Trident Z5 Neo RGB 2x16Gb 6000MHz CL30</p>
-                <p>MSI NVIDIA RTX 4070 Super </p>
+                <p>MSI NVIDIA RTX 4070 Super</p>
                 <p>Samsung 980 Pro 500Gb, Samsung 980 1Tb, WD Green 500Gb</p>
-                        
             </div>
         </div>
-     </div>
+    </div>
 
-     <!-- Overlay for "Perifériák" -->
-     <div class="overlay" id="overlay2">
+    <!-- Overlay for "Perifériák" -->
+    <div class="overlay" id="overlay2">
         <div class="overlay-content">
             <button onclick="closeOverlay('overlay2')">Bezárás</button>
             <h2>Perifériák</h2>
             <div class="component-list">
                 <p>Hyperx Alloy Origins PBT UK Gamer</p>
                 <p>Hyperx PulseFire Haste 2 Wireless</p>
-                <p></p>
-                <p>Hyperx QuadCast </p>
+                <p>Hyperx QuadCast</p>
                 <p>Boya BY-BA20</p>
-                <p>Samsung Odyssey G7 32" 144Hz 4K </p>
+                <p>Samsung Odyssey G7 32" 144Hz 4K</p>
             </div>
         </div>
-     </div>
+    </div>
 
     <script>
         function expandOverlay(overlayId) {
-            document.getElementById(overlayId).classList.add("open");
+            const overlay = document.getElementById(overlayId);
+            overlay.classList.remove("closing");  // Remove closing animation
+            overlay.classList.add("open");        // Add open animation
+            overlay.style.display = "block";      // Display overlay
         }
 
         function closeOverlay(overlayId) {
-            document.getElementById(overlayId).classList.remove("open");
+            const overlay = document.getElementById(overlayId);
+            overlay.classList.remove("open");     // Remove open animation
+            overlay.classList.add("closing");     // Add closing animation
+
+            setTimeout(() => {
+                overlay.classList.remove("closing");  // Remove closing class after animation
+                overlay.style.display = "none";       // Hide overlay after animation
+            }, 200); // Timeout must match the duration of the flyIn animation
         }
     </script>
 </body>

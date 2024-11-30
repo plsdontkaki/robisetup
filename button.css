@@ -71,6 +71,11 @@ button {
     opacity: 1;
 }
 
+.overlay.closing {
+    animation: flyIn 0.2s forwards;
+}
+
+/* Keyframe Animations */
 @keyframes flyOut {
     0% {
         transform: translate(-50%, -50%) scale(0.2);
@@ -83,6 +88,21 @@ button {
     100% {
         transform: translate(-50%, -50%) scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes flyIn {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 0;
     }
 }
 
@@ -122,6 +142,7 @@ button {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Responsive Design */
 @media (max-width: 1024px) {
     .overlay.open {
         width: 90vw;
@@ -169,5 +190,4 @@ button {
     p {
         font-size: 3vw;
     }
-
 }
