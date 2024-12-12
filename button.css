@@ -126,8 +126,8 @@ button {
 
 .overlay-content button {
     position: absolute;
-    top: 10px;
-    right: 40px;
+    top: 15px;
+    right: 60px;
     font-size: 1vw;
     padding: 5px 10px;
     background-color: transparent;
@@ -139,29 +139,42 @@ button {
 }
 
 .overlay-content button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.321);
+    border-radius: 10px;
+   
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .overlay.open {
         width: 90vw;
         height: 80vh;
     }
 
+    .overlay {
+        max-width: 85vw;
+        max-height: 85vh;
+    }
+
     .overlay-content h2 {
-        font-size: 3vw;
+        font-size: 1.5rem;
     }
 
     .overlay-content button {
-        font-size: 1.5vw;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
     .overlay.open {
-        width: 90vw;
-        height: 80vh;
+        width: 300px;
+        height: 200px;
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    .overlay {
+        max-width: 85vw;
+        max-height: 85vh;
     }
 
     .overlay-content h2 {
@@ -177,6 +190,11 @@ button {
     .overlay.open {
         width: 90vw;
         height: 80vh;
+    }
+
+    .overlay {
+        max-width: 85vw;
+        max-height: 85vh;
     }
 
     .overlay-content h2 {
