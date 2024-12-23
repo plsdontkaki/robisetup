@@ -116,7 +116,7 @@ button {
     text-align: center;
     padding: 20px;
     position: relative;
-    right: 4%;
+    right: 2%;
 
 }
 
@@ -190,6 +190,7 @@ button {
     .overlay.open {
         width: 90vw;
         height: 80vh;
+        
     }
 
     .overlay {
@@ -208,5 +209,9 @@ button {
     .overlay-content p {
         font-size: 3vw;
         padding: 5px;
+    }
+
+    .overlay-content {
+        right: 4%;
     }
 }
