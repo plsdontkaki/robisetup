@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <!-- Overlay for "Gép" -->
+    
     <div class="overlay" id="overlay1">
         <div class="overlay-content">
             <button onclick="closeOverlay('overlay1')">X</button>
@@ -44,24 +44,24 @@
                 <p>Ryzen 7 9800X3D 8-Core 4.7GHz</p>
                 <p>Arctic Freezer III 360 A-RGB</p>
                 <p>G.SKILL Trident Z5 Neo RGB 2x16Gb 6000MHz CL30</p>
-                <p>MSI Nvidia RTX 4080 Super</p>
-                <p>Crucial T700 1Tb, Crucial P3 Plus 1Tb, WD Green 500Gb</p>
+                <p>Sapphire Radeon RX 9070 XT Nitro+</p>
+                <p>Crucial T700 1Tb, Crucial T500 1Tb, WD Green 500Gb</p>
             </div>
         </div>
     </div>
 
-    <!-- Overlay for "Perifériák" -->
+    
     <div class="overlay" id="overlay2">
         <div class="overlay-content">
             <button onclick="closeOverlay('overlay2')">X</button>
             <h2>Perifériák</h2>
             <div class="component-list">
-                <p>Hyperx Alloy Origins PBT UK Gamer</p>
+                <p>Hyperx Alloy Origins PBT UK </p>
                 <p>Hyperx PulseFire Haste 2 Wireless</p>
-                <p>Hyperx QuadCast</p>
-                <p>Boya BY-BA20</p>
-                <p>Samsung Odyssey G7 32" 144Hz 4K</p>
-                <p>Samsung U32J590 32" 60Hz 4K</p>
+                <p>Hyperx SoloCast</p>
+                <p>Endorfy Studio Boom Arm</p>
+                <p>Acer Nitro 27" XV272UW2bmiiprx 240Hz 2K</p>
+                <p>Acer Nitro 27" VG270UEbmiipx 100Hz 2K</p>
             </div>
         </div>
     </div>
@@ -69,20 +69,20 @@
     <script>
         function expandOverlay(overlayId) {
             const overlay = document.getElementById(overlayId);
-            overlay.classList.remove("closing");  // Remove closing animation
-            overlay.classList.add("open");        // Add open animation
-            overlay.style.display = "block";      // Display overlay
+            overlay.classList.remove("closing");  
+            overlay.classList.add("open");        
+            overlay.style.display = "block";      
         }
 
         function closeOverlay(overlayId) {
             const overlay = document.getElementById(overlayId);
-            overlay.classList.remove("open");     // Remove open animation
-            overlay.classList.add("closing");     // Add closing animation
+            overlay.classList.remove("open");     
+            overlay.classList.add("closing");     
 
             setTimeout(() => {
-                overlay.classList.remove("closing");  // Remove closing class after animation
-                overlay.style.display = "none";       // Hide overlay after animation
-            }, 200); // Timeout must match the duration of the flyIn animation
+                overlay.classList.remove("closing");  
+                overlay.style.display = "none";       
+            }, 200); 
         }
     </script>
 </body>
